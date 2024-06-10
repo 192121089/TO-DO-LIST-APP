@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/navy-blue.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 50, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+/* New Task Styling */
+.new-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    background: #333;
+    color: #fff;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+    background-color: #e6b800;
+}
+
+/* Filter Buttons Styling */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #444;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Task List Styling */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s;
+}
+
+.task-item.completed {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+.task-desc {
+    flex: 1;
+    text-align: left;
+}
+
+.task-desc.completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.task-actions button {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.task-actions .complete-btn {
+    color: #28a745;
+}
+
+.task-actions .delete-btn {
+    color: #dc3545;
+}
+
+.task-actions button:hover {
+    color: #ffcc00;
+}
